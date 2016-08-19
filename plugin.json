@@ -13,7 +13,4 @@
     "css": [
         "static/style.css"
     ],
-    "scripts" : [
-        "static/js.js"
-    ]
 }
