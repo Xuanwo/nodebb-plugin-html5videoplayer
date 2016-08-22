@@ -28,3 +28,7 @@ Stable release, finish base function.
 ### 0.2.0
 
 Add responsive support, now the video can play on all kind of device.
+
+### 0.2.1
+
+Beautify the code
