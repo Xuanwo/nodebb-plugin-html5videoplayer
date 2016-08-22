@@ -32,3 +32,7 @@ Add responsive support, now the video can play on all kind of device.
 ### 0.2.1
 
 Beautify the code
+
+### 0.2.2
+
+Fix compatibility to be listed in nbbpm
