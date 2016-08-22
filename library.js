@@ -20,7 +20,7 @@
         if (data.postData.content.match(embedUrl_ogg)) {
            console.log("video/ogg");  embed  = "";
             embed  += ' <div class="videoContBox"  data-src="$1" data-type="video/ogg" data-codec="theora, vorbis" >';
-            embed  += '    <br><video class="vplayer" width="640" height="360" preload controls>';
+            embed  += '    <br><video class="vplayer" width="100%" height="auto" preload controls>';
             embed  += '     <source src="$1" type=\'video/ogg; codecs="theora, vorbis"\' />';
             embed  += ' </video></div>';
 
@@ -30,7 +30,7 @@
          if (data.postData.content.match(embedUrl_mp4)) {
             console.log("video/mp4");  embed  = "";
              embed  += ' <div class="videoContBox"  data-src="$1" data-type="video/mp4" data-codec="avc1.42E01E, mp4a.40.2" >';
-             embed  += '   <br><video class="vplayer" width="640" height="360" preload controls>';
+             embed  += '   <br><video class="vplayer" width="100%" height="auto" preload controls>';
              embed  += '  	  <source src="$1" type=\'video/mp4; codecs="avc1.42E01E, mp4a.40.2"\' />';
              embed  += '  </video></div>';
             data.postData.content = data.postData.content.replace(embedUrl_mp4, embed);
@@ -39,7 +39,7 @@
          if (data.postData.content.match(embedUrl_mov)) {
          console.log("video/mov");  embed  = "";
             embed  += ' <div class="videoContBox" data-src="$1" data-type="video/mp4" data-codec="avc1.42E01E, mp4a.40.2" >';
-            embed  += '    <br><video class="vplayer" width="640" height="360" preload controls>';
+            embed  += '    <br><video class="vplayer" width="100%" height="auto" preload controls>';
             embed  += '  	  <source src="$1" type=\'video/mp4; codecs="avc1.42E01E, mp4a.40.2"\' />';
             embed  += ' </video></div>';
             data.postData.content = data.postData.content.replace(embedUrl_mov, embed);
@@ -48,7 +48,7 @@
          if (data.postData.content.match(embedUrl_webm)) {
             console.log("video/webm");  embed  = "";
             embed  += ' <div class="videoContBox"  data-src="$1" data-type="video/webm" data-codec="vp8, vorbis" >';
-            embed  += '   <br><video class="vplayer" width="640" height="360" preload controls>';
+            embed  += '   <br><video class="vplayer" width="100%" height="auto" preload controls>';
             embed  += '     <source src="$1" type=\'video/webm; codecs="vp8, vorbis"\' />';
 	         embed  += ' </video></div>';
             data.postData.content = data.postData.content.replace(embedUrl_webm, embed);
