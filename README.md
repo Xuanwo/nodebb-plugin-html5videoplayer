@@ -1,24 +1,30 @@
-# nodebb-plugin-videoplayer
-     this plugin embeds an HTML5 video player. 
-     when upload a video this does not appear as a link but as players in the content.
-     Accepted video formats MP4, WEBM, MOV, OGV.
+# nodebb-plugin-html5videoplayer
 
-### NodeBB version 
+this plugin embeds an HTML5 video player.
+when upload a video this does not appear as a link but as players in the content.
+Accepted video formats MP4, WEBM, MOV, OGV.
 
-     run in NodeBB v0.7.x - v1.0.0
+## NodeBB version
 
+run in NodeBB v0.7.x - v1.1.0
 
-   
 ## Installation
 
-    npm install nodebb-plugin-videoplayer
-
+npm install nodebb-plugin-html5videoplayer
 
 ## Accepted video formats
 
-     MP4
-     WEBM
-     MOV
-     OGV
-     
-     
+- MP4
+- WEBM
+- MOV
+- OGV
+
+## Version
+
+### 0.1.0
+
+Stable release, finish base function.
+
+### 0.2.0
+
+Add responsive support, now the video can play on all kind of device.
