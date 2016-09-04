@@ -36,3 +36,7 @@ Beautify the code
 ### 0.2.2
 
 Fix compatibility to be listed in nbbpm
+
+### 0.2.3
+
+Fix Error: "Uncaught reference error: module is not defined"
