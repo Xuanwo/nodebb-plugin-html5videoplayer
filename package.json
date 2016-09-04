@@ -1,30 +1,30 @@
 {
-    "name": "nodebb-plugin-html5videoplayer",
-    "version": "0.2.2",
-    "description": "this plugin embeds an HTML5 videoplayer. when upload a video this does not appear as a link but as players in the content. Accepted video formats MP4, WEBM, MOV, OGV. Forked from https://github.com/ogerly/nodebb-plugin-videoplayer.",
-    "main": "library.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Xuanwo/nodebb-plugin-html5videoplayer.git"
-    },
-    "nbbpm": {
-        "compatibility": ">=0.7.0"
-    },
-    "keywords": [
-        "nodebb",
-        "plugin",
-        "video",
-        "player",
-        "webm",
-        "ogv",
-        "mp4",
-        "mov"
-    ],
-    "author": {
-        "name": "Xuanwo",
-        "email": "xuanwo.cn@gmail.com"
-    }
+  "name": "nodebb-plugin-html5videoplayer",
+  "version": "0.2.3",
+  "description": "this plugin embeds an HTML5 videoplayer. when upload a video this does not appear as a link but as players in the content. Accepted video formats MP4, WEBM, MOV, OGV. Forked from https://github.com/ogerly/nodebb-plugin-videoplayer.",
+  "main": "library.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xuanwo/nodebb-plugin-html5videoplayer.git"
+  },
+  "nbbpm": {
+    "compatibility": ">=0.7.0"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "video",
+    "player",
+    "webm",
+    "ogv",
+    "mp4",
+    "mov"
+  ],
+  "author": {
+    "name": "Xuanwo",
+    "email": "xuanwo.cn@gmail.com"
+  }
 }
