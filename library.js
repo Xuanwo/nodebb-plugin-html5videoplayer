@@ -9,7 +9,7 @@ var type = "",
     embedUrl_mov = /<a href="(:*.*\.mov)">.*<\/a>/ig, // regex mov
     embedUrl_webm = /<a href="(:*.*\.webm)">.*<\/a>/ig; // regex webm
 
-module.exports = {
+var VideoPlayer = {
     "parse": function(data, callback) {
         if (!data || !data.postData || !data.postData.content) {
             return callback(null, data);
@@ -58,3 +58,5 @@ module.exports = {
         callback(null, data);
     }
 };
+
+exports = VideoPlayer;
