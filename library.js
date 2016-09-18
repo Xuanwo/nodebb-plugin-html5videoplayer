@@ -54,5 +54,5 @@ var type = "",
         }
         callback(null, data);
     }
-})(exports);
+})();
 
