@@ -1,3 +1,5 @@
+# This Plugin is Deprecated, Please use [nodebb-plugin-ns-embed](https://github.com/NicolasSiver/nodebb-plugin-ns-embed)
+
 # nodebb-plugin-html5videoplayer
 
 this plugin embeds an HTML5 video player.
