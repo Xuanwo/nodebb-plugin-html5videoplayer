@@ -1,7 +1,5 @@
 "use strict";
 
-console.log("video started");
-
 var type = "",
     embed = "",
     embedUrl_ogg = /<a href="(:*.*\.ogv)">.*<\/a>/ig, // regex ogg
@@ -9,8 +7,8 @@ var type = "",
     embedUrl_mov = /<a href="(:*.*\.mov)">.*<\/a>/ig, // regex mov
     embedUrl_webm = /<a href="(:*.*\.webm)">.*<\/a>/ig; // regex webm
 
-var VideoPlayer = {
-    "parse": function(data, callback) {
+(function (VideoPlayer) {
+    VideoPlayer.parse = function (data, callback) {
         if (!data || !data.postData || !data.postData.content) {
             return callback(null, data);
         }
@@ -22,7 +20,6 @@ var VideoPlayer = {
             embed += '    <br><video class="vplayer" width="100%" height="auto" preload controls>';
             embed += '     <source src="$1" type=\'video/ogg; codecs="theora, vorbis"\' />';
             embed += ' </video></div>';
-
             data.postData.content = data.postData.content.replace(embedUrl_ogg, embed);
         }
         // mp4
@@ -57,6 +54,5 @@ var VideoPlayer = {
         }
         callback(null, data);
     }
-};
+})(exports);
 
-exports = VideoPlayer;

@@ -37,6 +37,6 @@ Beautify the code
 
 Fix compatibility to be listed in nbbpm
 
-### 0.2.3
+### 0.2.5
 
 Fix [Issue #1](https://github.com/Xuanwo/nodebb-plugin-html5videoplayer/issues/1): "Uncaught reference error: module is not defined"
