@@ -1,6 +1,6 @@
 "use strict";
 
-define(function () {
+define([], function () {
     var type = "",
         embed = "",
         embedUrl_ogg = /<a href="(:*.*\.ogv)">.*<\/a>/ig, // regex ogg
