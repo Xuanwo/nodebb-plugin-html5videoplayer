@@ -1,13 +1,13 @@
 "use strict";
 
-define([], function () {
+
+(function (VideoPlayer) {
     var type = "",
         embed = "",
         embedUrl_ogg = /<a href="(:*.*\.ogv)">.*<\/a>/ig, // regex ogg
         embedUrl_mp4 = /<a href="(:*.*\.mp4)">.*<\/a>/ig, // regex mp4
         embedUrl_mov = /<a href="(:*.*\.mov)">.*<\/a>/ig, // regex mov
-        embedUrl_webm = /<a href="(:*.*\.webm)">.*<\/a>/ig, // regex webm
-        VideoPlayer = {};
+        embedUrl_webm = /<a href="(:*.*\.webm)">.*<\/a>/ig; // regex webm
     VideoPlayer.parse = function (data, callback) {
         if (!data || !data.postData || !data.postData.content) {
             return callback(null, data);
@@ -54,6 +54,4 @@ define([], function () {
         }
         callback(null, data);
     };
-
-    return VideoPlayer;
-});
+}(module.exports));
